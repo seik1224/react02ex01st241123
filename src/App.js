@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       {name && mbti ? (
-        <MbtiResult />
+        <MbtiResult name={name} mbti={mbti} />
       ) : (
         <InputForm setName={setName} setMbti={setMbti} />
       )}
